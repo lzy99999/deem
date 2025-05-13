@@ -1,0 +1,44 @@
+1；#!/bin/bash
+
+# 显示当前日期时间
+echo "当前日期时间：$(date)"
+
+# 显示程序执行路径
+echo "程序执行路径：$PATH"
+
+# 显示用户账户
+echo "用户账户：$(whoami)"
+
+# 显示所在的目录位置
+echo "所在的目录位置：$(pwd)"
+
+
+
+2：#!/bin/bash
+
+# 定义变量 a 并赋值
+a=10
+
+# 定义变量 b 并赋值
+b=20
+
+# 计算 a 和 b 的和
+sum=$((a + b))
+
+# 输出结果
+echo "变量 a 和 b 的和为: $sum"
+    
+
+3 ；#!/bin/bash
+
+# 提示用户输入文件名
+echo "请输入一个文件名（例如 /etc/passwd）："
+read file_name
+
+# 判断文件是否为普通文件
+if [ -f "$file_name" ]; then
+    echo "$file_name 是一个普通文件。"
+else
+    echo "$file_name 不是一个普通文件。"
+fi
+    
