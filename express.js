@@ -9,5 +9,5 @@ function fibonacci(n) {
 }
 
 const result = fibonacci(10);
-console.log("斐波那契数列的前10项：");
+console.log("斐波那契列的前10项：");
 console.log(result);    
